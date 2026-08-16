@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: zeynep-august-eighteen-birthday-sky
+    buildCommand: echo "prebuilt"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
